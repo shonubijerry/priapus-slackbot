@@ -1,0 +1,49 @@
+{
+  "name": "priapus-slackbot",
+  "version": "1.0.0",
+  "description": "A slack bot that can be used to save conversation in an external drive.",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel ./src --out-dir ./dist",
+    "start": "node ./dist/index.js",
+    "start-dev": "DEBUG=app/debug nodemon --exec babel-node ./src/index.js",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shonubijerry/priapus-slackbot.git"
+  },
+  "keywords": [
+    "slackbot"
+  ],
+  "author": "Shonubi Oluwakorede",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shonubijerry/priapus-slackbot/issues"
+  },
+  "homepage": "https://github.com/shonubijerry/priapus-slackbot#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.4.5",
+    "async": "^3.1.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.18.0",
+    "nodemon": "^1.19.1"
+  }
+}
