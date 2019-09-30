@@ -1,8 +1,7 @@
-# This is the original task
 
 A slack bot that can be used to save conversation in an external drive.
 
-# TODO
+### TODO
 
 - User sign up (on external drive).
 - User link external drive with slack workspace.
